@@ -23,7 +23,7 @@
 ## trim-right-x
 This method removes whitespace from the right end of a string.
 
-**Version**: 1.3.3  
+**Version**: 1.3.4  
 **Author**: Xotic750 <Xotic750@gmail.com>  
 **License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
 **Copyright**: Xotic750  
