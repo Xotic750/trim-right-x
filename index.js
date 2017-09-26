@@ -1,6 +1,6 @@
 /**
  * @file This method removes whitespace from the right end of a string.
- * @version 2.0.0
+ * @version 2.0.1
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
@@ -18,7 +18,8 @@ var replace = ''.replace;
  * This method removes whitespace from the right end of a string.
  *
  * @param {string} string - The string to trim the right end whitespace from.
- * @returns {undefined|string} The right trimmed string.
+ * @throws {TypeError} If string is null or undefined or not coercible.
+ * @returns {string} The right trimmed string.
  * @example
  * var trimRight = require('trim-right-x');
  *
