@@ -21,27 +21,16 @@
 <a name="module_trim-right-x"></a>
 
 ## trim-right-x
+
 This method removes whitespace from the right end of a string.
 
-**Version**: 3.0.0  
-**Author**: Xotic750 <Xotic750@gmail.com>  
-**License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
-**Copyright**: Xotic750  
+- [trim-right-x](#module_trim-right-x)
+  - [`.trimRight2016`](#module_trim-right-x.trimRight2016) ⇒ <code>string</code>
 
-* [trim-right-x](#module_trim-right-x)
-    * [`.trimRight`](#module_trim-right-x.trimRight)
-    * [`.trimRight2016`](#module_trim-right-x.trimRight2016) ⇒ <code>string</code>
-    * [`.trimRight2018`](#module_trim-right-x.trimRight2018) ⇒ <code>string</code>
-
-<a name="module_trim-right-x.trimRight"></a>
-
-### `trim-right-x.trimRight`
-A reference to trimRight2018.
-
-**Kind**: static property of [<code>trim-right-x</code>](#module_trim-right-x)  
 <a name="module_trim-right-x.trimRight2016"></a>
 
 ### `trim-right-x.trimRight2016` ⇒ <code>string</code>
+
 This method removes whitespace from the right end of a string. (ES2016)
 
 **Kind**: static property of [<code>trim-right-x</code>](#module_trim-right-x)  
@@ -50,20 +39,22 @@ This method removes whitespace from the right end of a string. (ES2016)
 
 - <code>TypeError</code> If string is null or undefined or not coercible.
 
-
-| Param | Type | Description |
-| --- | --- | --- |
+| Param  | Type                | Description                                       |
+| ------ | ------------------- | ------------------------------------------------- |
 | string | <code>string</code> | The string to trim the right end whitespace from. |
 
-**Example**  
+**Example**
+
 ```js
-var trimRight = require('trim-right-x');
+import {trimRight2016} from 'trim-right-x';
 
-trimRight(' \t\na \t\n') === ' \t\na'; // true
+console.log(trimRight2016(' \t\na \t\n') === ' \t\na'); // true
 ```
-<a name="module_trim-right-x.trimRight2018"></a>
 
-### `trim-right-x.trimRight2018` ⇒ <code>string</code>
+<a name="module_trim-right-x"></a>
+
+### `trim-right-x` ⇒ <code>string</code>
+
 This method removes whitespace from the right end of a string. (ES2018)
 
 **Kind**: static property of [<code>trim-right-x</code>](#module_trim-right-x)  
@@ -72,14 +63,14 @@ This method removes whitespace from the right end of a string. (ES2018)
 
 - <code>TypeError</code> If string is null or undefined or not coercible.
 
-
-| Param | Type | Description |
-| --- | --- | --- |
+| Param  | Type                | Description                                       |
+| ------ | ------------------- | ------------------------------------------------- |
 | string | <code>string</code> | The string to trim the right end whitespace from. |
 
-**Example**  
-```js
-var trimRight = require('trim-right-x');
+**Example**
 
-trimRight(' \t\na \t\n') === ' \t\na'; // true
+```js
+import trimRight from 'trim-right-x';
+
+console.log(trimRight(' \t\na \t\n') === ' \t\na'); // true
 ```
