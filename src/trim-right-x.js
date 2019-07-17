@@ -25,6 +25,8 @@ export function trimRight2016(string) {
  * @throws {TypeError} If string is null or undefined or not coercible.
  * @returns {string} The right trimmed string.
  */
-export default function trimRight2018(string) {
+const trimRight2018 = function trimRight2018(string) {
   return replace.call(requireCoercibleToString(string), reRight2018, EMPTY_STRING);
-}
+};
+
+export default trimRight2018;

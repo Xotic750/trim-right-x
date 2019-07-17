@@ -2,11 +2,11 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017",
-  "date": "2019-07-16T21:06:25.958Z",
+  "date": "2019-07-17T13:09:26.023Z",
   "describe": "",
   "description": "This method removes whitespace from the right end of a string.",
   "file": "trim-right-x.js",
-  "hash": "17842672f39d64c755a8",
+  "hash": "a4a2ae32f5e82beae240",
   "license": "MIT",
   "version": "4.0.8"
 }
@@ -657,7 +657,6 @@ var string2016 = stringES2016;
 
 // CONCATENATED MODULE: ./dist/trim-right-x.esm.js
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "trimRight2016", function() { return trimRight2016; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return trimRight2018; });
 
 
 var EMPTY_STRING = '';
@@ -684,9 +683,11 @@ function trimRight2016(string) {
  * @returns {string} The right trimmed string.
  */
 
-function trimRight2018(string) {
+var trim_right_x_esm_trimRight2018 = function trimRight2018(string) {
   return replace.call(requireCoercibleToString(string), reRight2018, EMPTY_STRING);
-}
+};
+
+/* harmony default export */ var trim_right_x_esm = __webpack_exports__["default"] = (trim_right_x_esm_trimRight2018);
 
 
 
