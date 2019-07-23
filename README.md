@@ -20,42 +20,19 @@
 </a>
 <a name="module_trim-right-x"></a>
 
-## trim-right-x
+## trim-right-x (a.k.a trimEnd in ES2019)
 
-This method removes whitespace from the right end of a string.
+This method removes whitespace from the end of a string.
 
-- [trim-right-x](#module_trim-right-x)
-  - [`.trimRight2016`](#module_trim-right-x.trimRight2016) ⇒ <code>string</code>
+<a name="exp_module_trim-right-x--module.exports"></a>
 
-<a name="module_trim-right-x.trimRight2016"></a>
-
-### `trim-right-x.trimRight2016` ⇒ <code>string</code>
-
-This method removes whitespace from the right end of a string. (ES2016)
-
-**Kind**: static property of [<code>trim-right-x</code>](#module_trim-right-x)  
-**Returns**: <code>string</code> - The right trimmed string.  
-**Throws**:
-
-- <code>TypeError</code> If string is null or undefined or not coercible.
-
-| Param  | Type                | Description                                       |
-| ------ | ------------------- | ------------------------------------------------- |
-| string | <code>string</code> | The string to trim the right end whitespace from. |
-
-**Example**
-
-```js
-import {trimRight2016} from 'trim-right-x';
-
-console.log(trimRight2016(' \t\na \t\n') === ' \t\na'); // true
-```
+### `module.exports(string)` ⇒ <code>number</code> ⏏
 
 <a name="module_trim-right-x"></a>
 
 ### `trim-right-x` ⇒ <code>string</code>
 
-This method removes whitespace from the right end of a string. (ES2018)
+This method removes whitespace from the end of a string. (ES2019)
 
 **Kind**: static property of [<code>trim-right-x</code>](#module_trim-right-x)  
 **Returns**: <code>string</code> - The right trimmed string.  
@@ -70,7 +47,7 @@ This method removes whitespace from the right end of a string. (ES2018)
 **Example**
 
 ```js
-import trimRight from 'trim-right-x';
+import trimEnd from 'trim-right-x';
 
-console.log(trimRight(' \t\na \t\n') === ' \t\na'); // true
+console.log(trimEnd(' \t\na \t\n') === ' \t\na'); // true
 ```

@@ -1,25 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`trimRight trimRight should throw for Object.create(null) 1`] = `"Cannot convert object to primitive value"`;
+exports[`trimEnd trimEnd should throw for Object.create(null) 1`] = `"Cannot convert object to primitive value"`;
 
-exports[`trimRight trimRight should throw for Symbol 1`] = `"Cannot convert a Symbol value to a string"`;
+exports[`trimEnd trimEnd should throw for Symbol 1`] = `"Cannot convert a Symbol value to a string"`;
 
-exports[`trimRight trimRight should throw for Symbol 2`] = `"Cannot convert a Symbol value to a string"`;
+exports[`trimEnd trimEnd should throw for Symbol 2`] = `"Cannot convert a Symbol value to a string"`;
 
-exports[`trimRight trimRight should throw when target is null or undefined 1`] = `"Cannot call method on undefined"`;
+exports[`trimEnd trimEnd should throw when target is null or undefined 1`] = `"Cannot call method on undefined"`;
 
-exports[`trimRight trimRight should throw when target is null or undefined 2`] = `"Cannot call method on undefined"`;
+exports[`trimEnd trimEnd should throw when target is null or undefined 2`] = `"Cannot call method on undefined"`;
 
-exports[`trimRight trimRight should throw when target is null or undefined 3`] = `"Cannot call method on null"`;
-
-exports[`trimRight trimRight2016 should throw for Object.create(null) 1`] = `"Cannot convert object to primitive value"`;
-
-exports[`trimRight trimRight2016 should throw for Symbol 1`] = `"Cannot convert a Symbol value to a string"`;
-
-exports[`trimRight trimRight2016 should throw for Symbol 2`] = `"Cannot convert a Symbol value to a string"`;
-
-exports[`trimRight trimRight2016 should throw when target is null or undefined 1`] = `"Cannot call method on undefined"`;
-
-exports[`trimRight trimRight2016 should throw when target is null or undefined 2`] = `"Cannot call method on undefined"`;
-
-exports[`trimRight trimRight2016 should throw when target is null or undefined 3`] = `"Cannot call method on null"`;
+exports[`trimEnd trimEnd should throw when target is null or undefined 3`] = `"Cannot call method on null"`;
