@@ -1,9 +1,10 @@
 import requireCoercibleToString from 'require-coercible-to-string-x';
 import whiteSpace from 'white-space-x';
+import methodize from 'simple-methodize-x';
 var EMPTY_STRING = '';
 var RegExpCtr = /none/.constructor;
-var reRight2018 = new RegExpCtr("[".concat(whiteSpace, "]+$"));
-var replace = EMPTY_STRING.replace;
+var reRight = new RegExpCtr("[".concat(whiteSpace, "]+$"));
+var methodizedReplace = methodize(EMPTY_STRING.replace);
 /**
  * This method removes whitespace from the end of a string. (ES2019).
  *
@@ -13,7 +14,7 @@ var replace = EMPTY_STRING.replace;
  */
 
 var trimEnd = function trimEnd(string) {
-  return replace.call(requireCoercibleToString(string), reRight2018, EMPTY_STRING);
+  return methodizedReplace(requireCoercibleToString(string), reRight, EMPTY_STRING);
 };
 
 export default trimEnd;

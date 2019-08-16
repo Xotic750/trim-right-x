@@ -1,10 +1,11 @@
 import requireCoercibleToString from 'require-coercible-to-string-x';
 import whiteSpace from 'white-space-x';
+import methodize from 'simple-methodize-x';
 
 const EMPTY_STRING = '';
 const RegExpCtr = /none/.constructor;
-const reRight2018 = new RegExpCtr(`[${whiteSpace}]+$`);
-const {replace} = EMPTY_STRING;
+const reRight = new RegExpCtr(`[${whiteSpace}]+$`);
+const methodizedReplace = methodize(EMPTY_STRING.replace);
 
 /**
  * This method removes whitespace from the end of a string. (ES2019).
@@ -14,7 +15,7 @@ const {replace} = EMPTY_STRING;
  * @returns {string} The right trimmed string.
  */
 const trimEnd = function trimEnd(string) {
-  return replace.call(requireCoercibleToString(string), reRight2018, EMPTY_STRING);
+  return methodizedReplace(requireCoercibleToString(string), reRight, EMPTY_STRING);
 };
 
 export default trimEnd;
