@@ -2,7 +2,7 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017",
-  "date": "2019-08-17T12:25:41.271Z",
+  "date": "2019-08-17T21:34:05.172Z",
   "describe": "",
   "description": "This method removes whitespace from the end of a string.",
   "file": "trim-right-x.js",
